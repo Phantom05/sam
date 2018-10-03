@@ -1,0 +1,223 @@
+<!-- 수업자료 -->
+
+<!-- 수업 -->
+
+<!-- 태그 부분 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <base href="./img" target="_blank">
+</head>
+
+<body>
+  <h2>주석처리</h2>
+  <hr>
+
+  <h2>a링크</h2>
+  <a href=""></a>
+  <a href="" download></a>
+  <a href="document.html" rel="alternate">외부 link</a>
+  <br>
+  <a href="" rel="bookmark">bookmark</a>
+  <br>
+  <a href="" target="_blank">bookmark</a>
+  <br>
+  <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a>
+  <br>
+  <a href="tel:+4733378901">+47 333 78 901</a>
+  <br>
+  <a href="javascript:alert('Hello World!');"></a>
+  <br>
+  <hr>
+
+  <h2>abbr</h2>
+  The
+  <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+  <hr>
+
+  <h2>address</h2>
+  <address>
+    Written by
+    <a href="mailto:webmaster@example.com">Jon Doe</a>.
+    <br> Visit us at:
+    <br> Example.com
+    <br> Box 564, Disneyland
+    <br> USA
+  </address>
+  <hr> area,svg,canvas는 일단 하지 않습니다!
+  <h2>area</h2>
+  <img src="./img-1.jpg" width="145" height="126" alt="Planets" usemap="#planetmap">
+  <map name="planetmap">
+    <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+    <area shape="rect" coords="90,58,3" href="mercur.htm" alt="Mercury">
+    <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+  </map>
+  <hr>
+
+  <h2>article</h2>
+  <article>
+    <h1>Google Chrome</h1>
+    <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+  </article>
+  <hr>
+
+  <h2>aside</h2>
+  <aside>
+    <h4>Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+  </aside>
+  <hr>
+
+  <h2>audio</h2>
+  <audio controls>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+    <p>MP3	audio/mpeg <br>
+      OGG	audio/ogg <br>
+      WAV	audio/wav</p>
+    <hr>
+
+  <h2>b</h2>
+  <p>This is normal text - <b>and this is bold text</b>.</p>
+  <hr>
+
+
+  <h2>base</h2>
+      head 태그의 base 참조
+    <img src="/ss" alt="">
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- 속성 부분 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/1.css">
+</head>
+<body>
+
+  <h1>Hello world!</h1>
+  <p lang="fr" data-abc='hello'>안녕</p>
+  <p><abbr title="으쌰으쌰!">삼이</abbr> 2018-10-6일 첫수업!</p>
+  <p contenteditable="true">This is a paragraph. It is editable. Try to change this text.</p>
+  <p dir="auto">Write this text right-to-left!</p>
+
+  <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" tabindex="2"></div>
+  <p id="drag1" draggable="true" ondragstart="drag(event)" tabindex="1">삼이이동!</p>
+  <div>Ceci est un paragraphe</div>
+  <p hidden>hello</p>
+
+
+  <script>
+      function drag(ev){
+        ev.dataTransfer.setData("Text",ev.target.id);
+        console.log(ev)
+      }
+
+      function allowDrop(ev){
+        ev.preventDefault()
+      }
+
+      function drop(ev){
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+        ev.preventDefault()
+      }
+      
+    </script>
+
+</body>
+</html> -->
+
+<!-- 수업 -->
+
+<!-- 숙제 -->
+<!-- 1 - 속성 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/1-1.css">
+</head>
+
+<body>
+  <script>
+    // html 속성이용하여 홀리 그레일 레이아웃 만들어보기
+  </script>
+  <p>홀리 그레일 레이아웃</p>
+
+  <p>홀리 그레일 레이아웃</p>
+
+
+  <script>
+    // 적응형의 예제.
+    let device = navigator.userAgent
+    if(device.match(/iPhone/)){
+      location.href="https://m.naver.com/"
+
+    }
+    console.log(device);
+
+    let isMobile = {
+      Android: function () {
+        return navigator.userAgent.match(/Android/i) == null ? false : true;
+      },
+      BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
+      },
+      IOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+      },
+      Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
+      },
+      Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
+      },
+      any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
+      }
+    };
+
+    if (isMobile.any()) {
+      if (isMobile.Android()) {
+
+      } else if (isMobile.IOS()) {
+
+      } else if (isMobile.BlackBerry()) {
+
+      } else if (isMobile.Opera()) {
+
+      } else if (isMobile.Windows()) {
+
+      }
+    }
+
+  </script>
+</body>
+
+</html> -->
+
+
+<!-- 숙제 -->
