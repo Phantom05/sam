@@ -41,8 +41,8 @@ after, Node JS, Express, Ejs
   + 레벨테스트 문답 해석, W3C HTML 태그 훑어보기,  전체적인 워크플로우, 태그 작성해보기, CSS 사용해보기, 간단한 레이아웃 짜보기
 
 + 2주차
- + 
- + 
+  + CSS 
+  + 
 
 ## Installation
 ```js
